@@ -1,1 +1,1 @@
-![Your Image](Learn-In-This-Lesson.JPG)
+![Learn In This Lesson](Learn-in-this-lesson.JPG)
