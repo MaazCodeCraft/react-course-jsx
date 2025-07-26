@@ -1,1 +1,1 @@
-(Learn In this Lesson.JPG)
+(Learn-in-this-lesson.JPG)
