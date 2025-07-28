@@ -13,21 +13,21 @@
     <script type="text/babel">
       function ChatInput() {
         return (
-          <div>
+          <>
             <input />
             <button>Send</button>
-          </div>
+          </>
         );
       }
 
-      const div = (
-        <div>
-          {ChatInput()}
-        </div>
+      const app = (
+        <>
+          <ChatInput />
+        </>
       );
 
       const container = document.querySelector(".js-container");
-      ReactDOM.createRoot(container).render(div);
+      ReactDOM.createRoot(container).render(app);
     </script>
   </body>
 </html>
