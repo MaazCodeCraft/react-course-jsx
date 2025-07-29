@@ -1,0 +1,5 @@
+![1](/Exercise/Lesson-02/exercise%20pictures/1.JPG)
+![2](/Exercise/Lesson-02/exercise%20pictures/2.JPG)
+![3](/Exercise/Lesson-02/exercise%20pictures/3.JPG)
+![4](/Exercise/Lesson-02/exercise%20pictures/4.JPG)
+![5](/Exercise/Lesson-02/exercise%20pictures/5.JPG)
