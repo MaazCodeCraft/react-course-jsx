@@ -1,1 +1,0 @@
-![Learn In This Lesson](Learn-in-this-lesson.JPG)
