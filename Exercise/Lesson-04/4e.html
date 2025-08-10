@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .title {
+        font-size: 25px;
+      }
+
+      .email-input,
+      .password-input {
+        padding: 10px 15px;
+        border-width: 1px;
+        border-radius: 5px;
+      }
+
+      .password-input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .login-button,
+      .signup-button {
+        background-color: rgb(0, 123, 255);
+        color: white;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .login-button {
+        margin-right: 5px;
+      }
+
+      .show-button {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/maazcodecraft@1.0.1/react.js"></script>
+    <script src="https://unpkg.com/maazcodecraft@1.0.1/react-dom.js"></script>
+    <script src="https://unpkg.com/maazcodecraft@1.0.1/babel.js"></script>
+
+    <script type="text/babel">
+      function LoginForm() {
+        const [showPassword, setShowPassword] = React.useState(false);
+
+        const handlClick = () => {
+          setShowPassword(!showPassword);
+
+          /*
+            Another solution is:
+            if (showPassword) {
+              setShowPassword(false);
+            } else {
+              setShowPassword(true);
+            }
+          */
+        };
+
+        return (
+          <>
+            <div>
+              <input type="email" placeholder="Email" className="email-input" />
+            </div>
+            <div>
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                className="password-input"
+              />
+              <button onClick={handlClick} className="show-button">
+                {showPassword ? "Hide" : "Show"}
+              </button>
+            </div>
+            <button className="login-button">Login</button>
+            <button className="signup-button">Sign up</button>
+          </>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <p className="title">Hello, welcome to my website</p>
+            <LoginForm />
+          </>
+        );
+      }
+
+      const container = document.querySelector(".js-container");
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
