@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Chatbot } from "supersimpledev";
+import LoadingSpiner from "../assets/loading-spinner.gif";
 
-function ChatInput({ chatMessages, setChatMessages }) {
+export function ChatInput({ chatMessages, setChatMessages }) {
   const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
