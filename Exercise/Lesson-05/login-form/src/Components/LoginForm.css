@@ -1,0 +1,33 @@
+.title {
+  font-size: 25px;
+}
+
+.email-input,
+.password-input {
+  padding: 10px 15px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.password-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-button,
+.signup-button {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button {
+  margin-right: 5px;
+}
+
+.show-button {
+  margin-left: 10px;
+}
