@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { chatbot } from "supersimpledev";
 import { ChatInput } from "./components/ChatInput";
 import ChatMessages from "./components/ChatMessages";
 
@@ -6,6 +7,15 @@ import "./App.css";
 
 function App() {
   const [chatMessages, setChatMessages] = useState([]);
+
+  useEffect(() => {
+    chatbot.addResponses({
+      goodbye: "Goodbye. Have a great day!",
+      "give me a unique id": function () {
+        return `Sure! Here's a unique ID: ${crypto.randomUUID()}`;
+      },
+    });
+  });
 
   return (
     <div className="app-container">
