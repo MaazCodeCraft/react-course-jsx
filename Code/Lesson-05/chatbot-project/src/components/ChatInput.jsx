@@ -1,4 +1,5 @@
 import { useState } from "react";
+import dayjs from "dayjs";
 import { Chatbot } from "supersimpledev";
 import LoadingSpiner from "../assets/loading-spinner.gif";
 import "./ChatInput.css";
@@ -33,6 +34,7 @@ export function ChatInput({ chatMessages, setChatMessages }) {
         message: inputText,
         sender: "user",
         id: crypto.randomUUID(),
+        time: dayjs().valueOf(),
       },
       {
         message: <img src={LoadingSpiner} className="loading-spinner" />,
@@ -53,6 +55,7 @@ export function ChatInput({ chatMessages, setChatMessages }) {
         message: response,
         sender: "robot",
         id: crypto.randomUUID(),
+        time: dayjs().valueOf(),
       },
     ]);
 
